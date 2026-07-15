@@ -14,27 +14,28 @@ if (menuToggle && navLinks) {
   });
 }
 
-// Active link highlighting based on scroll position
-function updateActiveLink() {
-  const sections = document.querySelectorAll('.section[id]');
+// Set active link based on current page
+function setActiveLinkByPage() {
   const links = document.querySelectorAll('.nav-link');
-  let current = '';
-
-  sections.forEach(section => {
-    const top = section.offsetTop - 100;
-    if (window.scrollY >= top) {
-      current = section.getAttribute('id');
-    }
-  });
+  const currentPath = window.location.pathname;
+  const currentFile = currentPath.split('/').pop() || 'index.html';
 
   links.forEach(link => {
-    link.classList.remove('active');
     const href = link.getAttribute('href');
-    if (href && href.includes('#' + current)) {
+    const linkFile = href.split('/').pop();
+    
+    // Treat index.html and / as Home
+    const isHomePage = currentFile === 'index.html' || currentFile === '' || currentFile === '/';
+    const linkIsHome = linkFile === 'index.html' || href === '/';
+
+    if (isHomePage && linkIsHome) {
       link.classList.add('active');
+    } else if (!isHomePage && linkFile === currentFile) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 }
 
-window.addEventListener('scroll', updateActiveLink);
-document.addEventListener('DOMContentLoaded', updateActiveLink);
+document.addEventListener('DOMContentLoaded', setActiveLinkByPage);
