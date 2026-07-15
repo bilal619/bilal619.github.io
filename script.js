@@ -7,7 +7,6 @@ if (menuToggle && navLinks) {
     navLinks.classList.toggle('open');
   });
 
-  // Close menu when a link is clicked
   navLinks.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('open');
