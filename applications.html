@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications - AppMakerStudio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <svg class="brand-icon" viewBox="0 0 48 48" fill="none">
+          <defs><linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d47a1"/><stop offset="100%" stop-color="#1565c0"/></linearGradient></defs>
+          <rect x="8" y="8" width="32" height="32" rx="3" fill="url(#sg)"/>
+          <path d="M14 20L22 14L30 20L30 32L22 38L14 32Z" fill="#fff" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+          <circle cx="22" cy="26" r="2.5" fill="#fff" opacity="0.8"/>
+        </svg>
+        <span class="brand-name">AppMakerStudio</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="applications.html" class="nav-link active">Applications</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="privacy-policy.html" class="nav-link">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <h1 class="section-title">Applications</h1>
+    <p class="section-subtitle">Crafted with care — simple tools that respect your time and privacy.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3 class="card-title">ScanMate Pro</h3>
+        <p class="card-desc">A fast QR Code and Barcode Scanner with local history storage and offline functionality.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.scanmatepro" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play</a>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Text Tools Pro</h3>
+        <p class="card-desc">An all-in-one text utility app featuring case conversion, text cleanup, word counting, duplicate removal, and many other productivity tools.</p>
+        <span class="badge badge-green">Coming Soon</span>
+      </div>
+      <div class="card">
+        <h3 class="card-title">App Three</h3>
+        <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna.</p>
+        <span class="badge badge-amber">Planned</span>
+      </div>
+      <div class="card">
+        <h3 class="card-title">App Four</h3>
+        <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        <span class="badge badge-amber">Planned</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 AppMakerStudio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
