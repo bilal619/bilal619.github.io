@@ -238,3 +238,57 @@ body {
   .hero-title { font-size: 2.2rem; }
   .hero { padding: 4rem 1.5rem; }
 }
+
+
+/* === Applications page === */
+.group-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1e293b;
+  margin: 3rem 0 1.25rem;
+}
+.group-title:first-of-type { margin-top: 0; }
+.app-card { display: flex; flex-direction: column; }
+.app-card .card-desc { flex: 1; }
+.app-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.app-head .card-title { margin-bottom: 0.4rem; }
+.app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(30,27,75,0.18);
+}
+.badge-purple { background: #f3e8ff; color: #6b21a8; padding: 0.2rem 0.75rem; }
+.badge-blue { background: #e0f2fe; color: #075985; padding: 0.2rem 0.75rem; }
+.play-cta {
+  margin-top: 3.5rem;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+.play-cta p { color: #64748b; margin-bottom: 1rem; }
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #4c1d95;
+  color: #ffffff;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover { background: #5b21b6; transform: translateY(-2px); }
+
+.card-grid.two-col { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 700px) {
+  .card-grid.two-col { grid-template-columns: 1fr; }
+}
