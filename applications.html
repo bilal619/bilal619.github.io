@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Applications - AppMakerStudio</title>
+  <meta name="description" content="Android apps by App Makers Studio: Yarn Trail and Bolt Out puzzle games, ScanMate Pro, Text Tools Pro, UnitConverterPro and Driftime.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/logo-512.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 </head>
@@ -11,11 +14,19 @@
   <nav class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="brand">
-        <svg class="brand-icon" viewBox="0 0 48 48" fill="none">
-          <defs><linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d47a1"/><stop offset="100%" stop-color="#1565c0"/></linearGradient></defs>
-          <rect x="8" y="8" width="32" height="32" rx="3" fill="url(#sg)"/>
-          <path d="M14 20L22 14L30 20L30 32L22 38L14 32Z" fill="#fff" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
-          <circle cx="22" cy="26" r="2.5" fill="#fff" opacity="0.8"/>
+        <svg class="brand-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#0e7490"/>
+              <stop offset="0.45" stop-color="#4c1d95"/>
+              <stop offset="1" stop-color="#1e1b4b"/>
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="11" fill="url(#lg)"/>
+          <rect x="10" y="10" width="11.5" height="11.5" rx="3.2" fill="#fff"/>
+          <rect x="27.8" y="9.2" width="11.5" height="11.5" rx="3.2" fill="#fbbf24" transform="rotate(12 33.5 15)"/>
+          <rect x="10" y="26" width="11.5" height="11.5" rx="3.2" fill="#fff"/>
+          <rect x="26" y="26" width="11.5" height="11.5" rx="3.2" fill="#5eead4"/>
         </svg>
         <span class="brand-name">AppMakerStudio</span>
       </a>
@@ -32,23 +43,85 @@
 
   <section class="section">
     <h1 class="section-title">Applications</h1>
-    <p class="section-subtitle">Crafted with care — simple tools that respect your time and privacy.</p>
-    <div class="card-grid">
-      <div class="card">
-        <h3 class="card-title">ScanMate Pro</h3>
+    <p class="section-subtitle">Six Android apps, one studio — cozy puzzle games and simple tools that respect your time and privacy.</p>
+
+    <h2 class="group-title">Puzzle Games</h2>
+    <div class="card-grid two-col">
+      <article class="card app-card">
+        <div class="app-head">
+          <img class="app-icon" src="images/yarn-trail.png" alt="Yarn Trail: One Line Puzzle app icon" width="64" height="64" loading="lazy">
+          <div>
+            <h3 class="card-title">Yarn Trail: One Line Puzzle</h3>
+            <span class="badge badge-purple">Puzzle game</span>
+          </div>
+        </div>
+        <p class="card-desc">A cozy one-line puzzle. Trace a single continuous yarn line through every dot without lifting your finger — simple to learn, tricky to master, and relaxing to play anytime.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.yarntrail&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=yarntrail" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play &rarr;</a>
+      </article>
+      <article class="card app-card">
+        <div class="app-head">
+          <img class="app-icon" src="images/bolt-out.png" alt="Bolt Out: Screw Jam Sort app icon" width="64" height="64" loading="lazy">
+          <div>
+            <h3 class="card-title">Bolt Out: Screw Jam Sort</h3>
+            <span class="badge badge-purple">Puzzle game</span>
+          </div>
+        </div>
+        <p class="card-desc">A satisfying screw puzzle. Unscrew the bolts in the right order, sort them out and clear the board — a calm brain teaser that fits into a quick break.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.boltout&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=boltout" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play &rarr;</a>
+      </article>
+    </div>
+
+    <h2 class="group-title">Tools &amp; Utilities</h2>
+    <div class="card-grid two-col">
+      <article class="card app-card">
+        <div class="app-head">
+          <img class="app-icon" src="images/scanmate-pro.png" alt="ScanMate Pro app icon" width="64" height="64" loading="lazy">
+          <div>
+            <h3 class="card-title">ScanMate Pro</h3>
+            <span class="badge badge-blue">Document scanner</span>
+          </div>
+        </div>
         <p class="card-desc">A fast document and QR/barcode scanner with OCR text extraction, smart auto-tagging, and a searchable document vault — scan, organize, and find your documents, all processed on-device.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.scanmatepro&utm_source=appmakerstudio_site&utm_medium=website&utm_campaign=applications_page" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play</a>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Text Tools Pro</h3>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.scanmatepro&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=scanmatepro" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play &rarr;</a>
+      </article>
+      <article class="card app-card">
+        <div class="app-head">
+          <img class="app-icon" src="images/text-tools-pro.png" alt="Text Tools Pro app icon" width="64" height="64" loading="lazy">
+          <div>
+            <h3 class="card-title">Text Tools Pro</h3>
+            <span class="badge badge-blue">Text utility</span>
+          </div>
+        </div>
         <p class="card-desc">An all-in-one text utility app featuring case conversion, text cleanup, word counting, duplicate removal, and many other productivity tools.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.texttoolspro&utm_source=appmakerstudio_site&utm_medium=website&utm_campaign=applications_page" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play</a>
-      </div>
-      <div class="card">
-        <h3 class="card-title">UnitConverterPro</h3>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.texttoolspro&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=texttoolspro" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play &rarr;</a>
+      </article>
+      <article class="card app-card">
+        <div class="app-head">
+          <img class="app-icon" src="images/unit-converter-pro.png" alt="UnitConverterPro app icon" width="64" height="64" loading="lazy">
+          <div>
+            <h3 class="card-title">UnitConverterPro</h3>
+            <span class="badge badge-blue">Converter</span>
+          </div>
+        </div>
         <p class="card-desc">A fast, all-in-one unit converter with 100+ categories — from everyday measurements to live currency exchange rates — with offline support, favorites, conversion history, and a home-screen currency widget.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.unitconverterpro&utm_source=appmakerstudio_site&utm_medium=website&utm_campaign=applications_page" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play</a>
-      </div>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.unitconverterpro&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=unitconverterpro" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play &rarr;</a>
+      </article>
+      <article class="card app-card">
+        <div class="app-head">
+          <img class="app-icon" src="images/driftime.png" alt="Driftime: Focus & Study Timer app icon" width="64" height="64" loading="lazy">
+          <div>
+            <h3 class="card-title">Driftime: Focus & Study Timer</h3>
+            <span class="badge badge-blue">Productivity</span>
+          </div>
+        </div>
+        <p class="card-desc">A distraction-free focus and study timer. Start a session, stay on task and take proper breaks, with a clean, minimal design that keeps you in the flow.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.appmakerstudio.driftime&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=driftime" target="_blank" rel="noopener noreferrer" class="card-link">View on Google Play &rarr;</a>
+      </article>
+    </div>
+
+    <div class="play-cta">
+      <p>Prefer to browse everything in one place?</p>
+      <a href="https://play.google.com/store/apps/dev?id=8458462084108640164&amp;utm_source=appmakerstudio_site&amp;utm_medium=website&amp;utm_campaign=applications_page&amp;utm_content=developer_page" target="_blank" rel="noopener noreferrer" class="btn-primary">See all apps on Google Play</a>
     </div>
   </section>
 
